@@ -27,5 +27,5 @@ userSchema.pre('save', async function () {
     }
 })
 
-const UserModel = models?.UserModel || model<UserProps>("User", userSchema);
+const UserModel = models?.User || model<UserProps>("User", userSchema);
 export default UserModel;
